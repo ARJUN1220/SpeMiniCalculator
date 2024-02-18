@@ -39,5 +39,17 @@ pipeline{
                 }
              }
 
+             stage('Push Docker Images') {
+                steps {
+                    script{
+                        docker.withRegistry('', 'DockerHubCred') {
+                            sh 'docker tag spe_calculator arjun201/spe_calculator:latest'
+                            sh 'docker push arjun201/spe_calculator'
+                        }
+                    }
+                }
+             }
+
+
         }
 }
