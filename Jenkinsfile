@@ -17,11 +17,11 @@ pipeline{
                     }
                 }
             }
-        }
 
-        stage('Build maven'){
-            steps{
-                sh 'mvn clean install'
-            }
+             stage('Build maven'){
+                steps{
+                    sh 'mvn clean install'
+                }
+             }
         }
 }
