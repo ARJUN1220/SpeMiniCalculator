@@ -4,8 +4,8 @@ pipeline{
         maven 'maven'
     }
     environment {
-            DOCKER_IMAGE_NAME = 'spe_calculator'
-            GITHUB_REPO_URL = 'https://github.com/ARJUN1220/DemoCaclculator.git'
+            DOCKER_IMAGE_NAME = 'project_mini_calculator'
+            GITHUB_REPO_URL = 'https://github.com/ARJUN1220/SpeMiniCalculator.git'
     }
 
         stages {
@@ -43,8 +43,8 @@ pipeline{
                 steps {
                     script{
                         docker.withRegistry('', 'DockerHubCred') {
-                            sh 'docker tag spe_calculator arjun201/spe_calculator:latest'
-                            sh 'docker push arjun201/spe_calculator'
+                            sh 'docker tag project_mini_calculator arjun201/project_mini_calculator:latest'
+                            sh 'docker push arjun201/project_mini_calculator'
                         }
                     }
                 }
