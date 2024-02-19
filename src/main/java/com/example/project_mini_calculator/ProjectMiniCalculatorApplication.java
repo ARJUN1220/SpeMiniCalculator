@@ -15,7 +15,7 @@ public class ProjectMiniCalculatorApplication {
 
         while (true) {
             System.out.println("******************************");
-            System.out.println("*   Scientific Calculator    *");
+            System.out.println("**      mini Calculator     **");
             System.out.println("******************************");
             System.out.println("1. Square root function - √x");
             System.out.println("2. Factorial function - x!");
