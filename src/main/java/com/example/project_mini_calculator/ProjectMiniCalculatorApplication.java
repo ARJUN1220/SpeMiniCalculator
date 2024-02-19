@@ -23,6 +23,7 @@ public class ProjectMiniCalculatorApplication {
             System.out.println("4. Power function - x^b");
             System.out.println("5. Exit");
             System.out.println("******************************");
+            System.out.println("");
 
             System.out.print("Enter your choice (1-5): ");
             int choice = scanner.nextInt();
@@ -32,16 +33,19 @@ public class ProjectMiniCalculatorApplication {
                     System.out.print("Enter a number for square root: ");
                     double sqrtInput = scanner.nextDouble();
                     System.out.println("Square root: " + squareRoot(sqrtInput));
+                    System.out.println("");
                     break;
                 case 2:
                     System.out.print("Enter a number for factorial: ");
                     int factorialInput = scanner.nextInt();
                     System.out.println("Factorial: " + factorial(factorialInput));
+                    System.out.println("");
                     break;
                 case 3:
                     System.out.print("Enter a number for natural logarithm: ");
                     double lnInput = scanner.nextDouble();
                     System.out.println("Natural logarithm: " + naturalLogarithm(lnInput));
+                    System.out.println("");
                     break;
                 case 4:
                     System.out.print("Enter the base (x) for the power function: ");
@@ -49,6 +53,7 @@ public class ProjectMiniCalculatorApplication {
                     System.out.print("Enter the exponent (b) for the power function: ");
                     double powerExponent = scanner.nextDouble();
                     System.out.println("Power function: " + powerFunction(powerBase, powerExponent));
+                    System.out.println("");
                     break;
                 case 5:
                     System.out.println("Exiting the calculator");
@@ -56,6 +61,7 @@ public class ProjectMiniCalculatorApplication {
                     break;
                 default:
                     System.out.println("Invalid choice. Please enter a number between 1 and 5.");
+                    System.out.println("");
             }
         }
     }
