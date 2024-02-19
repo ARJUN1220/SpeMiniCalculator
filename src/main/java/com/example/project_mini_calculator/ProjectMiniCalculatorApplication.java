@@ -30,29 +30,45 @@ public class ProjectMiniCalculatorApplication {
 
             switch (choice) {
                 case 1:
+                    System.out.println("==============================");
+                    System.out.println("output: Square root ");
+                    System.out.println("==============================");
                     System.out.print("Enter a number for square root: ");
                     double sqrtInput = scanner.nextDouble();
                     System.out.println("Square root: " + squareRoot(sqrtInput));
+                    System.out.println("=============end==============");
                     System.out.println("");
                     break;
                 case 2:
+                    System.out.println("==============================");
+                    System.out.println("output: Factorial ");
+                    System.out.println("==============================");
                     System.out.print("Enter a number for factorial: ");
                     int factorialInput = scanner.nextInt();
                     System.out.println("Factorial: " + factorial(factorialInput));
+                    System.out.println("=============end==============");
                     System.out.println("");
                     break;
                 case 3:
+                    System.out.println("==============================");
+                    System.out.println("output: Natural logarithm ");
+                    System.out.println("==============================");
                     System.out.print("Enter a number for natural logarithm: ");
                     double lnInput = scanner.nextDouble();
                     System.out.println("Natural logarithm: " + naturalLogarithm(lnInput));
+                    System.out.println("=============end==============");
                     System.out.println("");
                     break;
                 case 4:
+                    System.out.println("==============================");
+                    System.out.println("output: Power function ");
+                    System.out.println("==============================");
                     System.out.print("Enter the base (x) for the power function: ");
                     double powerBase = scanner.nextDouble();
                     System.out.print("Enter the exponent (b) for the power function: ");
                     double powerExponent = scanner.nextDouble();
                     System.out.println("Power function: " + powerFunction(powerBase, powerExponent));
+                    System.out.println("=============end==============");
                     System.out.println("");
                     break;
                 case 5:
