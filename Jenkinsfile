@@ -43,8 +43,8 @@ pipeline{
                 steps {
                     script{
                         docker.withRegistry('', 'DockerHubCred') {
-                            sh 'docker tag project_mini_calculator arjun201/project_mini_calculator:latest'
-                            sh 'docker push arjun201/project_mini_calculator'
+                            sh 'docker tag "${DOCKER_IMAGE_NAME}" arjun201/"${DOCKER_IMAGE_NAME}":latest'
+                            sh 'docker push arjun201/"${DOCKER_IMAGE_NAME}"'
                         }
                     }
                 }
