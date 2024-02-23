@@ -2,11 +2,15 @@ package com.example.project_mini_calculator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Scanner;
 
 @SpringBootApplication
 public class ProjectMiniCalculatorApplication {
+
+    private static final Logger logger =LogManager.getLogger("calculator");
 
     public static void main(String[] args) {
         SpringApplication.run(ProjectMiniCalculatorApplication.class, args);
@@ -83,7 +87,9 @@ public class ProjectMiniCalculatorApplication {
     }
 
     public static double squareRoot(double x) {
-        return Math.sqrt(x);
+        double result=Math.sqrt(x);
+        logger.info(" - [SQUARE] ROOT of "+x+" - [RESULT] : "+ result);
+        return result;
     }
 
     public static long factorial(int x) {
@@ -92,16 +98,20 @@ public class ProjectMiniCalculatorApplication {
         for (int i = 2; i <= x; i++) {
             result *= i;
         }
-
+        logger.info(" - [FACTORIAL] of "+x+" - [RESULT] : "+ result);
         return result;
     }
 
     public static double naturalLogarithm(double x) {
-        return Math.log(x);
+        double result=Math.log(x);
+        logger.info(" - [NATURAL LOG] of "+x+" - [RESULT] : "+ result);
+        return result;
     }
 
     public static double powerFunction(double x, double b) {
-        return Math.pow(x, b);
+        double result=Math.pow(x,b);
+        logger.info(" - [POWER] of "+x+" AND "+b+" - [RESULT] : "+ result);
+        return result;
     }
 
 }
