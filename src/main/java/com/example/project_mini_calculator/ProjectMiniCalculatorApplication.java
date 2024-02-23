@@ -104,7 +104,7 @@ public class ProjectMiniCalculatorApplication {
 
     public static double naturalLogarithm(double x) {
         double result=Math.log(x);
-        logger.info(" - [NATURAL LOG] of "+x+" - [RESULT] : "+ result);
+        logger.info(" - [NATURAL LOG] of "+x+" - [RESULT] :: "+ result);
         return result;
     }
 
