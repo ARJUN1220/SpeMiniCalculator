@@ -61,12 +61,6 @@ pipeline{
                 }
              }
 
-            stage('run container'){
-                steps{
-                    sh 'docker run -it project_mini_calculator'
-                }
-             }
-
 
         }
 }
