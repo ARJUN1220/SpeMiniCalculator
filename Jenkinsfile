@@ -24,18 +24,18 @@ pipeline{
                 }
              }
 
+            stage('Test'){
+                steps{
+                    sh 'mvn test'
+                }
+             }
+
              stage('Build Docker Image') {
                 steps {
                     script {
                         // Build Docker image
                         docker.build("${DOCKER_IMAGE_NAME}", '.')
                     }
-                }
-             }
-
-             stage('Test'){
-                steps{
-                    sh 'mvn test'
                 }
              }
 
