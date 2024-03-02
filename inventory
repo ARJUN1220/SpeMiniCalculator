@@ -1,1 +1,2 @@
-172.16.142.169
+ansible_host=localhost ansible_user=aj ansible_ssh_pass=12345
+ansible_ssh_common_args = '-o StrictHostKeyChecking=no'
